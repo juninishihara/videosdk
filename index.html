@@ -26,11 +26,14 @@
 //              enforceVirtualBackground: true
           });
 
+            var stream/
+
             // Juni
             videoClient.startVideo();
             //videoClient.startVideo({ virtualBackground: { imageUrl: 'blur' } });
             //stream.updateVirtualBackgroundImage(imageUrl: 'blur');
             //const stream = videoClient.getMediaStream();
+            stream = videoClient.getMediaStream();
             stream.enableBackgroundNoiseSuppression(true);
 
 
