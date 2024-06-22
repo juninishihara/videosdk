@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>SDK</title>
   </head>
-    <div id="create">Start Video SDK 1</div>
+    <div id="create">Start Video SDK 2</div>
     <script src="https://us01ccistatic.zoom.us/us01cci/web-sdk/video-client.js"></script>
     <script src="coi-serviceworker.js"></script>
     <!-- The script source is the video client JS SDK for Contact Center.
@@ -35,6 +35,7 @@
             //const stream = videoClient.getMediaStream();
             stream = videoClient.getMediaStream();
             stream.enableBackgroundNoiseSuppression(true);
+            stream.startVideo('blur');
 
 
 
